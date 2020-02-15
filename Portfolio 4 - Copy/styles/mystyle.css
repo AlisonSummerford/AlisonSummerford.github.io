@@ -1,0 +1,290 @@
+body{
+  margin:0;
+  padding:0;
+  top:0;
+  color:black;
+  letter-spacing: 2.5px;
+}
+
+#navigation{
+  width:100vw;
+  height: 5vh;
+  top:0;
+
+  background-color: black;
+  color: white;
+
+  font-family: 'Segoe UI', sans-serif;
+  font-weight:lighter;
+  margin:0;
+  padding:0;
+  text-align:center;
+
+  display: grid;
+  grid-template-columns: 9fr 2fr 2fr;
+  overflow: hidden;
+  position: fixed
+}
+
+#navigation button{
+  height: 5vh;
+  background-color: black;
+  color: white;
+  text-align: left;
+  border:none;
+
+}
+#navlinks{
+  display:none;
+}
+
+#myprojects:hover{
+  background: blue;
+}
+
+#projects1:hover #navlinks{
+  display: block;
+  min-height: 200px;
+  height:auto;
+  top:5vh;
+  margin:0;
+  padding:0;
+  background-color: white;
+  color:black;
+  z-index:-1
+
+}
+
+#home{
+  width:100vw;
+  height: 75vh;
+  top:0;
+
+  background-color: black;
+  color: white;
+
+  font-family: 'Segoe UI', sans-serif;
+  font-weight:lighter;
+  margin:0;
+  padding:0;
+  text-align:center;
+
+}
+
+
+#home .headerboldtext{
+  font-weight:800;
+
+}
+
+#home .headerlighttext{
+  font-weight:100;
+
+}
+#home .lighttext{
+  font-weight:100;
+}
+#home h2, h3{
+  margin:0;
+}
+
+#home h1{
+  font-size: 4vw;
+  letter-spacing: 5px;
+  font-family: 'Playfair Display', serif;
+}
+#home h2{
+  font-size: 3vw;
+  font-family: 'Segoe UI', sans-serif;
+}
+#home h3{
+  font-size: 2.5vw;
+  font-family: 'Segoe UI', sans-serif;
+}
+#home p{
+   font-size: 2vw;
+   font-family: 'Segoe UI', sans-serif;
+}
+
+#home_content{
+
+  width:75%;
+  height:75%;
+  padding: 12.5% 0;
+
+
+  background-color: black;
+  text-align: center;
+  margin:0 auto;
+
+}
+
+#aboutme{
+  width:100vw;
+  height: 60vh;
+
+  background-color: white;
+  color: #666666;
+  font-family: 'Segoe UI', sans-serif;
+
+  margin:0;
+  padding:0;
+  text-align:center;
+}
+
+#aboutme_content{
+  width:80%;
+  height:80%;
+  text-align: left;
+  margin:0 auto;
+  padding: 3% 10%;
+  color: #666666;
+}
+
+
+#aboutme h1{
+  font-size: 4vw;
+  font-family: 'Playfair Display', serif;
+}
+#aboutme h2{
+  font-size: 3vw;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight:100;
+}
+#aboutme h3{
+  font-size: 2.5vw;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight:100;
+}
+#aboutme p{
+   font-size: 2vw;
+   font-family: 'Segoe UI', sans-serif;
+}
+
+
+#projects{
+  width:100vw;
+  min-height: 100vh;
+  height: auto;
+
+  background-color: white;
+  color: black;
+
+  margin:0;
+  padding:0;
+  text-align:center;
+  color: #666666;
+}
+
+#projects h1{
+  font-size: 4vw;
+  font-family: 'Playfair Display', serif;
+}
+#projects h2{
+  font-size: 3vw;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight:100;
+}
+#projects h3{
+  font-size: 2.5vw;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight:100;
+}
+#projects p{
+   font-size: 2vw;
+   font-family: 'Segoe UI', sans-serif;
+}
+
+#projects_content{
+  width:80%;
+  height:80%;
+  text-align: left;
+  margin:0 auto;
+  padding: 3% 10%;
+
+}
+
+#projects_intro{
+  text-align: right;
+  padding-bottom: 20%;
+}
+
+.projects_label_bold{
+  font-weight: 700;
+}
+.projects_label_light{
+  font-weight: 100;
+}
+
+#footer{
+  position:fixed;
+
+  width:100vw;
+  height:5vh;
+  bottom:0px;
+  left:0px;
+  overflow: hidden;
+
+  background-color:black;
+  color:white;
+
+}
+#footer_content{
+  display:grid;
+  grid-template-columns: 5fr 6fr 1fr;
+
+
+}
+#envelope2{
+    text-align:right;
+}
+
+a{
+  text-decoration:none;
+  color:black;
+  font-weight: bold;
+}
+.envtext{
+
+  text-decoration: none;
+  color:white;
+  padding:0 0 3.3px 0 ;
+  margin:0 0 3.3px 0 ;
+}
+.envimg{
+  padding-left: 10px;
+  padding-bottom: 0 0 3px 0;
+  margin-bottom: 0 0 3px 0;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+  #footer_content{
+    display:grid;
+    grid-template-columns: 3fr 6fr 1.2fr;
+  }
+
+
+}
+
+@media screen and (max-width: 800px) {
+
+  #footer_content{
+    display:grid;
+    grid-template-columns: 2fr 8fr 1.4fr;
+  }
+
+
+}
+
+@media screen and (max-width: 450px) {
+
+  #footer_content{
+    display:grid;
+    grid-template-columns: 1fr 8fr 2fr;
+  }
+
+
+}
+}
